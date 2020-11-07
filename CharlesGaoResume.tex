@@ -1,4 +1,4 @@
-\documentclass[9pt]{extarticle}
+\documentclass[11pt]{extarticle}
 
 \usepackage{enumitem}
 \usepackage{verbatim}
@@ -6,199 +6,105 @@
 \usepackage{parskip}
 \usepackage{titlesec}
 \usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{tabularx}
 
 \pagenumbering{gobble}
-\setlength\parskip{1pt}
-\titlespacing{\section}{0pt}{8pt}{0pt}
+\usepackage[sfdefault]{FiraSans}
+\titlespacing*{\section}{0pt}{10pt}{10pt}
+\titlespacing*{\subsection}{0pt}{10pt}{0pt}
+\titleformat{\section}{\normalfont\large\bfseries}{}{}{}[\titlerule]
+\titleformat{\subsection}[runin]{\normalfont\large\bfseries}{}{}{}
+
 \setlist[itemize]{noitemsep}
+\setlength{\parskip}{0em}
+
+\newcommand{\resumeHead}[1]{
+\section*{#1}
+}
+
+\newcommand{\resumeSub}[2]{
+\subsection*{#1} \hfill {#2}
+}
 
 \begin{document}
 
 \begin{center}
 \textbf{\huge{CHARLES GAO}}
 
-Toronto, Canada $\bullet$ 514--262--1866 $\bullet$ c39gao@uwaterloo.ca
-$\bullet$ \href{https://github.com/cgwelcome}{https://github.com/cgwelcome }
+charlesgao.c@gmail.com $\bullet$ 514--262--1866 $\bullet$ Waterloo, Canada
 \end{center}
 
-\section*{\large{EDUCATION}}
-\rule[1em]{\textwidth}{0.3pt}
-\begin{minipage}[t]{0.6\linewidth}
-\begin{flushleft}
-\textbf{University of Waterloo}
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.39\linewidth}
-\begin{flushright}
-\textit{Expected Graduation Date: April 2020}
-\end{flushright}
-\end{minipage}
 
-\textbf{BMath,
-Double Major in Computer Science \& Combinatorics and Optimization}
+\section*{EDUCATION}
+\subsection*{University of Waterloo} \hfill {Sept. 2015 --- Apr. 2020}
 
-\vfill
+\textit{Bachelor of Computer Science \& Combinatorics and Optimization }
 
-\section*{\large{EXPERIENCE}}
-\rule[1em]{\textwidth}{0.3pt}
+\section*{EXPERIENCE}
+\subsection*{Co-Founder/Full-Stack Developer} \hfill {Sept. 2015 --- Apr. 2020}
 
-\begin{minipage}[t]{0.8\linewidth}
-\begin{flushleft}
-\textbf{Co-Founder/Full-Stack Developer}\\
 \textit{Viafly Technologies, New York}
 \begin{itemize}
-	\item Created a full-scale point-of-sale e-commerce platform
-		(Ruby on Rails, React, PostgreSQL)
-		from scratch as a coordinator and full-stack developer
-		in a team of three
-	\item Designed a database schema and implemented a PostgreSQL database
-		for a e-commerce website
-	\item Designed RESTful API development specifications using
-		Postman API Documentation to plan the
-		development of the website
-	\item Added Shopify, Square, Lightspeed third-party authorization (OAuth 2.0)
-	\item
-		Automated vendors registration, and products uploading
-		to server database from Shopify, Square, Lightspeed API,
-		and tested using RSpec and mock
-	\item Implemented an efficient tag-based product search infrastructure
-		using Algolia
-	\item Added online payment process (Visa, MasterCard)
-		on  the back-end using Stripe API
-	\item Created the landing webpage
-		and profile pages for shops using React (Redux)
-	\item Deployed the platform on Heroku for continuous integration,
-		and set up mail server with AWS
-	\item Scraped 50 000\texttt{+} products using Python
-		for front-end testing during early production stage
+  \item Created a point-of-sale e-commerce platform with Ruby on Rails, React, and PostgreSQL
+  \item Designed a database schema and implemented a PostgreSQL database for a e-commerce website
+  \item Designed RESTful API development specifications using Postman API Documentation to plan the development of the website
+  \item Added Shopify, Square, Lightspeed third-party authorization (OAuth 2.0)
+  \item Automated vendors registration, and products uploading to server database from Shopify, Square, Lightspeed API, and tested using RSpec and mock
+  \item Implemented an efficient tag-based product search infrastructure using Algolia
+  \item Added online payment process on the back-end using Stripe API
+  \item Created the landing webpage and profile pages for shops using React (Redux)
+  \item Deployed the platform on Heroku for continuous integration, and set up mail server with AWS
+  \item Scraped 50 000\texttt{+} products using Python for front-end testing during early production stage
 \end{itemize}
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.19\linewidth}
-\begin{flushright}
-Sept. 2017 --- Jan. 2020
-\end{flushright}
-\end{minipage}
 
-\vfill
+\resumeSub{ETL Developer}{May 2018 --- Mar. 2019}
 
-\begin{minipage}[t]{0.8\linewidth}
-\begin{flushleft}
-\textbf{ETL Developer}\\
 \textit{Energy Profiles Limited, Toronto}
 \begin{itemize}
-	\item Built ETL pipelines using Java and Python
-		to efficiently gather, clean and
-		store energy data for analysis
-	\item Created data loaders in Java
-		to obtain temperature data from a network of sensors in
-		a buildings
-	\item Created a Java scraping framework to increase
-		the development efficiency of utility bills loading tools
-	\item Built a Bash toolkit to check the consistency
-		between the data of real and billed consumption
-	\item Wrote stored procedures on a Microsoft SQL Server database for
-		report generation
-	\item Added unit tests on core functions with JUnit
+  \item Built ETL pipelines using Java and Python to efficiently gather, clean and store energy data for analysis
+  \item Created data loaders in Java to obtain temperature data from a network of sensors in a buildings
+  \item Created a Java scraping framework to increase the development efficiency of utility bills loading tools
+  \item Built a Bash toolkit to check the consistency between the data of real and billed consumption
+  \item Wrote stored procedures on a Microsoft SQL Server database for report generation
+  \item Added unit tests on core functions with JUnit
 \end{itemize}
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.19\linewidth}
-\begin{flushright}
-May 2018 --- Mar. 2019
-\end{flushright}
-\end{minipage}
 
-\vfill
-
-\section*{\large{SKILLS}}
-\rule[1em]{\textwidth}{0.3pt}
+\section*{SKILLS}
 \begin{itemize}
-	\item \textbf{Languages}:
-		Python,
-		JavaScript (ES6),
-		C\texttt{++}, C,
-		Java, Ruby, Bash
-	\item \textbf{Technologies}:
-		Ruby on Rails (RSpec),
-		Node.js (Express),
-		AWS, Heroku,
-		PostgreSQL,
-		React,
-		Linux (Ubuntu, Arch, Gentoo)
-	\item \textbf{Courses:}
-		Operating System, Machine Learning, Real-time programming,
-		Compiler Construction, Cryptography
+  \item \textbf{Languages}: Ruby, JavaScript, Python, C\texttt{++}, Java, Bash
+  \item \textbf{Technologies}: Ruby on Rails, Node.js, AWS, Heroku, PostgreSQL, Linux
 \end{itemize}
 
-\vfill
+\section*{PROJECTS}
+\subsection*{Java Compiler (CS 444) --- C\texttt{++}} \hfill Jan. 2020 --- Apr. 2020
 
-\section*{\large{PROJECTS}}
-\rule[1em]{\textwidth}{0.3pt}
-
-\begin{minipage}[t]{0.80\linewidth}
-\begin{flushleft}
-\textbf{Java Compiler (CS 444) --- C\texttt{++}}
 \begin{itemize}
-	\item Created a compiler from a subset of Java to x86 Assembly
-	\item Implemented a tokenizer and parser from scratch in
-		C\texttt{++}
-	\item Developed semantics analysis in which includes
-		type and hierarchial checking
-	\item Integrated a unit testing framework Catch2
-		for Test-Driven Development
+  \item Created a compiler from a subset of Java to x86 Assembly
+  \item Implemented a tokenizer and parser from scratch in
+    C\texttt{++}
+  \item Developed semantics analysis in which includes
+    type and hierarchial checking
+  \item Integrated a unit testing framework Catch2
+    for Test-Driven Development
 \end{itemize}
-\end{flushleft}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.19\linewidth}
-\begin{flushright}
-Jan. 2020 --- Present
-\end{flushright}
-\end{minipage}
 
-\vfill
-
-\begin{minipage}[t]{0.80\linewidth}
-\begin{flushleft}
-\textbf{Train Microkernel (CS 452) --- C}
+\subsection*{ARM Microkernel (CS 452) --- C} \hfill Sept. 2019 --- Dec. 2019
 \begin{itemize}
-	\item Created an ARM bare-metal real-time operating system (RTOS)
-		from scratch in a team of two
-	\item Implemented context switching, hardware interrupt handler,
-		RS-232 serial port device driver for processes to time-share CPU time
-\end{itemize}
-\end{flushleft}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.19\linewidth}
-\begin{flushright}
-Sept. 2019 --- Dec. 2019
-\end{flushright}
-\end{minipage}
+  \item Created an ARM bare-metal real-time operating system (RTOS)
+  \item Implemented context switching, hardware interrupt handler, RS-232 serial port device driver for processes to time-share CPU time
+    \end{itemize}
 
-\vfill
-
-\begin{minipage}[t]{.80\linewidth}
-\begin{flushleft}
-\textbf{OmnivoxDownloader --- Python}
+\subsection*{OmnivoxDownloader --- Python} \hfill Sept. 2019 --- Dec. 2019
 \begin{itemize}
-	\item Built a file downloader with a GUI to synced class documents
-		from high school website
-	\item Utilized Requests and BeautifulSoup to
-		extract tags from school's online learning management website
-	\item Built a GUI using wxPython featuring
-		a real-time download status frame and a pause/resume option
-	\item Synchronized multiple concurrent threads to improve the smoothness
-		of the GUI
+  \item Built a file downloader with a GUI to synced class documents
+    from high school website
+  \item Utilized Requests and BeautifulSoup to
+    extract tags from school's online learning management website
+  \item Built a GUI using wxPython featuring
+    a real-time download status frame and a pause/resume option
+  \item Synchronized multiple concurrent threads to improve the smoothness
+    of the GUI
 \end{itemize}
-\end{flushleft}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{.19\linewidth}
-\begin{flushright}
-Jun. 2015 --- Jul. 2015
-\end{flushright}
-\end{minipage}
 
 \end{document}
