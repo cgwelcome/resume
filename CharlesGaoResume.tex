@@ -19,14 +19,6 @@
 \setlist[itemize]{noitemsep}
 \setlength{\parskip}{0em}
 
-\newcommand{\resumeHead}[1]{
-\section*{#1}
-}
-
-\newcommand{\resumeSub}[2]{
-\subsection*{#1} \hfill {#2}
-}
-
 \begin{document}
 
 \begin{center}
@@ -38,67 +30,65 @@ charlesgao.c@gmail.com $\bullet$ 514--262--1866 $\bullet$ Waterloo, Canada
 \section*{SKILLS}
 \begin{itemize}
   \item \textbf{Languages}: Ruby, JavaScript, Python, C\texttt{++}, Java, Bash
-  \item \textbf{Technologies}: Ruby on Rails, Node.js, AWS, Heroku, PostgreSQL, Linux
+  \item \textbf{Libraries \& Framework}: Ruby on Rails, Node.js, RSpec, JUnit, Catch2
+  \item \textbf{Technologies \& Tools}: AWS, Heroku, PostgreSQL, CMake, Maven, Docker, Linux
 \end{itemize}
 
-
 \section*{EXPERIENCE}
-\subsection*{Backend Developer} \hfill {Sept. 2019 --- May. 2020}
+\subsection*{Backend Developer} \hfill Sept. 2019 to May 2020
 
 \textit{Viafly Technologies, New York}
 \begin{itemize}
-  \item Created a point-of-sale e-commerce platform with Ruby on Rails, React, and PostgreSQL
-  \item Designed a database schema and implemented a PostgreSQL database for a e-commerce website
-  \item Designed RESTful API specifications using Postman API Documentation for planning
-  \item Automated vendors registration, and products uploading to server database from Shopify, and Square API, and tested using RSpec
-  \item Implemented an efficient tag-based product search infrastructure using Algolia
+  \item Created a point-of-sale e-commerce platform with Ruby on Rails, Heroku, React/Redux, and PostgreSQL integrated with Shopify, and Square API
   \item Added online payment process on the backend using Stripe API
-  \item Created the landing webpage and profile pages for shops using React/Redux
-  \item Deployed the platform on Heroku for continuous integration/continuous deployment (CI/CD)
-  \item Scraped 50 000\texttt{+} products using Python for front-end testing during early production stage
+  \item Implemented an efficient tag-based product search infrastructure through Algolia API
+  \item Designed a normalized database schema on Rails Active Record (ORM)
 \end{itemize}
 
-\resumeSub{ETL Developer}{May 2018 --- Mar. 2019}
+\subsection*{ETL Developer} \hfill May 2018 to Mar. 2019
 
 \textit{Energy Profiles Limited, Toronto}
 \begin{itemize}
-  \item Built ETL pipelines using Java and Python to efficiently gather, clean and store energy data for analysis
-  \item Created data loaders in Java to obtain temperature data from a network of sensors in a buildings
-  \item Created a Java scraping framework to increase the development efficiency of utility bills loading tools
-  \item Wrote stored procedures on a Microsoft SQL Server database for report generation
-  \item Added unit tests on core functions with JUnit to prove correctness
+  \item Maintained an ETL pipelines for energy gathering using Java, Python, and C\#
+  \item Implemented utility bill data loading system with HtmlUnit, Maven, and CronJob
+  \item Wrote Stored Procedures and Constraints in SQL for cleansing of energy data
+  \item Synchronized temperature data gathering from a network of sensors with BACnet Protocol
 \end{itemize}
+
+
+\subsection*{Software Developer} \hfill Jan. 2018 to Mar. 2018
+
+\textit{Kamusi Project, Lausanne}
+\begin{itemize}
+  \item Created a chatbot on WeChat using Python, Google App Engine and WebHooks
+  \item Designed a database of emojis and foreign words encoded in UTF-8 using SQLite
+\end{itemize}
+
 
 \section*{PROJECTS}
-\subsection*{Java Compiler (CS 444) --- C\texttt{++}} \hfill Jan. 2020 --- Apr. 2020
-
+\subsection*{JOOS1W Compiler (CS 444)} \hfill Jan. 2020 to Apr. 2020
 \begin{itemize}
-  \item Created a Java to x86 Assembly compiler in C\texttt{++}
-  \item Set-up a cross-platform build system using CMake
-  \item Integrated a unit testing with Catch2 for Test-Driven Development
+  \item Created a compiler for JOOS1W, a large subset of Java 1.3 to i386 assembly language in C++17
+  \item Handled Scanning, Parsing, Weeding, Abstract Syntax Tree Building, Name Resolution, Type Checking, Static Analysis and Code Generation for any code in the language of JOOS1W
 \end{itemize}
 
-\subsection*{ARM Microkernel (CS 452) --- C} \hfill Sept. 2019 --- Dec. 2019
+\subsection*{Trains Microkernel (CS 452)} \hfill Sept. 2019 --- Dec. 2019
 \begin{itemize}
-  \item Created an ARM bare-metal real-time operating system (RTOS)
+  \item Created an ARM bare-metal real-time operating system (RTOS) in C
   \item Implemented context switching, hardware interrupt handler, RS-232 serial port device driver for processes to time-share CPU time
-    \end{itemize}
+\end{itemize}
 
-\subsection*{OmnivoxDownloader --- Python} \hfill Sept. 2019 --- Dec. 2019
+\subsection*{OmnivoxExtrator} \hfill Sept. 2016 to Dec. 2016
 \begin{itemize}
-  \item Built a file downloader with a GUI to synced class documents
-    from high school website
-  \item Utilized Requests and BeautifulSoup to
-    extract tags from school's online learning management website
-  \item Built a GUI using wxPython featuring
-    a real-time download status frame and a pause/resume option
-  \item Synchronized multiple concurrent threads to improve the smoothness
-    of the GUI
+  \item Built a file downloader to synced CEGEP class documents with Python, wxPython, and BeautifulSoup
+  \item Captured key target data with CSS selector on the HTML page captured with Requests
+  \item Inspected a website API requests with Chrome DevTools for data extraction
+  \item Synchronized multiple concurrent threads to improve the smoothness of the GUI
 \end{itemize}
 
 \section*{EDUCATION}
-\subsection*{University of Waterloo} \hfill {Sept. 2015 --- Apr. 2020}
+\subsection*{University of Waterloo} \hfill Sept. 2015 to Apr. 2020
 
-\textit{Bachelor of Computer Science \& Combinatorics and Optimization }
+\textit{B. Math., Computer Science Major and Combinatorics \& Optimization Major}
 
 \end{document}
