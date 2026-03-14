@@ -1,5 +1,6 @@
 *
 !*.pdf
 !*.tex
+!README.md
 !.gitignore
 SSR_TSRPT.pdf
